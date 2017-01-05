@@ -1,0 +1,1201 @@
+\RequirePackage{lineno}
+\documentclass[aps,preprint,superscriptaddress,12pt,tightenlines]{revtex4}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{overpic}
+%%%%%%
+\graphicspath{{figures/}}
+\newcommand{\br}[1]{\mathcal{B}(#1)}
+\newcommand{\zc}{Z_c(3900)}
+\newcommand{\zcp}{Z_c(4020)}
+\newcommand{\lum}{{\cal L}}
+\newcommand{\eff}{\varepsilon}
+\newcommand{\BR}{{\cal B}}
+\newcommand{\jpc}{J^{PC}}
+\newcommand{\pip}{\pi^+}
+\newcommand{\pim}{\pi^-}
+\newcommand{\piz}{\pi^0}
+\newcommand{\etap}{\eta^{\prime}}
+\newcommand{\hc}{h_c}
+\newcommand{\pphc}{\pi^+\pi^- h_c}
+\newcommand{\etacp}{\eta_c(2S)}
+\newcommand{\psp}{\psi(2S)}
+\newcommand{\pspp}{\psi(3770)}
+\newcommand{\jpsi}{J/\psi}
+\newcommand{\psift}{\psi(4040)}
+\newcommand{\psifto}{\psi(4160)}
+\newcommand{\psiftf}{\psi(4415)}
+\newcommand{\EE}{e^+e^-}
+\newcommand{\MM}{\mu^+\mu^-}
+\newcommand{\LL}{\ell^+\ell^-}
+\newcommand{\GG}{\gamma\gamma}
+\newcommand{\pp}{\pi^+\pi^-}
+\newcommand{\ppp}{\pi^+\pi^-\pi^0}
+\newcommand{\kk}{K^+K^-}
+\newcommand{\ddb}{D\bar{D}}
+\newcommand{\ddn}{D^0\bar{D}^0}
+\newcommand{\ddc}{D^+D^-}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\etajpsi}{\eta J/\psi}
+\newcommand{\ppjpsi}{\pi^+\pi^- J/\psi}
+\newcommand{\jpsipp}{\pi^+\pi^- J/\psi}
+\newcommand{\pppsp}{\pi^+\pi^- \psp}
+\newcommand{\psppp}{\pi^+\pi^- \psp}
+%%%
+\parskip=5pt plus 1pt minus 1pt
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\Journal#1#2#3#4{{#1} {\bf #2}, #3 (#4)}
+\def\IJMP{Int. J. Mod. Phys. A}
+\def\NCA{Nuovo Cimento}
+\def\NIM{Nucl. Instrum. Methods}
+\def\NIMA{Nucl. Instrum. Methods A}
+\def\NPB{Nucl. Phys. B}
+\def\PLB{Phys. Lett. B}
+\def\PRL{Phys. Rev. Lett.}
+\def\PRD{Phys. Rev. D}
+\def\PRP{Phys. Rep.}
+\def\ZPC{Z. Phys. C}
+\def\EPJC{Eur. Phys. J. C}
+\def\HEPNP{HEP \& NP}
+%\tiny \scriptsize \footnotesize \small \normalsize
+%\large \Large \LARGE \huge \Huge
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\linenumbers
+
+\graphicspath{{figure/}}
+\DeclareGraphicsExtensions{.eps,.png,.ps}
+%\hyphenpenalty=0
+%\tolerance=1000
+
+\preprint{\vbox{\hbox{}
+                \hbox{BESIII draft - V2.0}
+                }}
+
+\title{\boldmath
+Observation of $e^{+}e^{-}\rightarrow \pi^{+}\pi^{-}\psi(3770)$
+and $D\bar{D}_{1}(2420)$}
+\author{Y.~Hu}
+\author{W.~M.~Song}
+\author{C.~Z.~Yuan }
+\address{Institute of High Energy Physics, Beijing, 100049, China }
+\collaboration{BESIII Collaboration}
+\date{\today}
+
+\begin{abstract}
+
+We present a study of $e^{+}e^{-}\to \pp\ddn$, $\pp\ddc$ and the
+intermediate processes using data samples at center-of-mass
+energies above 4.09~GeV collected with the BESIII detector at
+BEPCII. In the $D\bar{D}$ invariant mass spectrum, we observe the
+$\psi(3770)$ signal for the first time and the Born cross section
+of $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$ are measured. We also
+search for the possible $Z_{c}$ state in $\pi^{\pm}\psi(3770)$
+invariant mass spectrum, no obvious signal is found.  We also
+search for the $X(4013)$, the possible heavy-quark-spin-symmetry partner of
+the $X(3872)$, in $D\bar{D}$ invariant mass spectrum, no obvious
+signal is found. The upper limits of
+$\sigma[e^{+}e^{-}\to \rho^{0}X(4013)]\times \mathcal{B}(X\to
+D\bar{D})$ are given. In the $D\pi^{+}\pi^{-}$ invariant mass
+spectrum, we observe the $D_{1}(2420)$ signal. The Born cross
+section of $\EE\to D_{1}(2420)^{0}\bar{D}^{0}+c.c.$ times the
+$D_{1}(2420)^{0}\to D^{0}\pi^{+}\pi^{-}$ branching fraction and
+that of $\EE\to D_{1}(2420)^{0}\bar{D}^{0}+c.c.$ times the
+$D_{1}(2420)^{0}\to D^{*+}\pi^{-}$ branching fraction, $\EE\to D_{1}(2420)^{+}D^{-}+c.c.$ times the
+$D_{1}(2420)^{+}\to D^{+}\pi^{+}\pi^{-}$ branching fraction for
+center-of-mass energies above 4.3~GeV are measured for the first
+time.
+
+\end{abstract}
+
+\pacs{14.40.Rt, 13.20.Gd, 13.66.Bc, 13.40.Hq, 14.40.Pq}
+
+\maketitle
+
+\section{Introduction}
+
+The heavy quarkonia have been studied for more than forty years
+for testing and developing the quantum chromodynamics (QCD). On
+one hand, some effective theories has been developed to describe
+the quarkonium spectroscopy and transition dynamics; on the other
+hand, many states with exotic properties ($XYZ$ particles) were
+discovered, and some of them are beyond the scope of current
+theoretical framework. The rich information on the $XYZ$ particles
+may have opened a door though which Quark Confinement can be
+understood. To understand these $XYZ$ particles, the knowledge
+about the traditional quarkonia is, of course, also of great
+importance.
+
+In recent years, several new vector charmonium-like states, the
+$Y(4260)$, $Y(4360)$, and $Y(4660)$ have been discovered via their
+decays into the hidden-charm $\pi^{+}\pi^{-}J/\psi$ or
+$\pi^{+}\pi^{-}\psi(3686)$ final states~\cite{BabarY4260,
+BabarY4360, BELLEY4260, BELLEY4360}. The charged $Z_{c}(3900)$ and
+$Z_{c}(4050)$ have been observed in $\pi^{\pm}J/\psi$ and
+$\pi^{\pm}\psi(3686)$ invariant mass spectrum in the processes
+$e^{+}e^{-}\to \pi^{+}\pi^{-}J/\psi$ and
+$\pp\psi(3686)$~\cite{zc3900, BELLEY4260, BELLEY4360},
+respectively. A natural extension of the analysis is the search
+for a similar final state $\EE\to \pi^{+}\pi^{-}\psi(3770)$ and
+search for similar charged structure decays into
+$\pi^{\pm}\psi(3770)$.
+
+The $\psi(3770)$ is generally assumed to be the $1^{3}D_{1}$
+charmonium state with some mixture of the $2^{3}S_{1}$, this makes
+the $\psi(3770)$ a bit different from the $J/\psi$ and
+$\psi(3686)$ which are $^{3}S_{1}$ dominant. One of the other two
+$D$-wave spin-triplet charmonium states, $X(3823)$ or the
+$\psi(1^{3}D_{2})$, has been observed in $\EE\to
+\pp\psi(1^{3}D_{2})$ at BESIII~\cite{X3823}, so a naive
+expectation is that, $\EE\to \pp \pspp$ and $\EE\to \pp
+\psi(1^3D_3)$ should have been produced in the BESIII data,
+although so far there is no calculation on how large the production
+rates are. The $\psi(3770)$ decays dominantly to $D\bar{D}$, which
+is also an important decay mode of the
+$\psi(1^{3}D_{3})$~\cite{Highercharmonia}, so we study $\EE\to
+\pi\pi D\bar{D}$ final states in this analysis.
+
+The $X(3872)$ state was first observed by Belle Collaboration~\cite{X3872}, and
+confirmed subsequently by several other
+experiments~\cite{CDFX3872,D0X3872,BABARX3872}. Even though it
+clearly contains a $c\bar{c}$ pair, the $X(3872)$ does not fit
+well within the conventional charmonium spectrum. It could be a
+$D\bar{D}^{*}$ molecule with $J^{PC} = 1^{++}$, and within this
+picture, the existence of its heavy quark spin symmetry partner,
+$X_{2}$ ($J^{PC} = 2^{++}$), an $S$-wave $D^{*}\bar{D}^{*}$ bound
+state is predicted~\cite{PRD056004,PRD076006}. Its mass is about
+4013~MeV/$c^2$ and it decays dominantly into $D\bar{D}$,
+$D\bar{D}^{*}$ and $\bar{D}D^{*}$ in $D$-wave. So $X(4013)$ can
+also be produced in $e^{+}e^{-}\to \pi^{+}\pi^{-} D\bar{D}$. The
+possible discovery of the $2^{++}$ charmonium-like state would
+provide a strong support for the interpretation that the $X(3872)$
+is dominantly a $D\bar{D}^{*}$ hadronic
+molecule~\cite{DecaywidthX4013}.
+
+Amongst various models to interpret the
+$Y(4260)$~\cite{BabarY4260,BELLEY4260}, the authors of
+Ref.~\cite{Y4260asDD1} argue that the $Y(4260)$ as a relative
+$S$-wave $D_{1}(2420)\bar{D}$ system is able to accommodate nearly all
+the present observations of the $Y(4260)$, especially its absence
+in various open charm decay channels and the observation of
+$Z_{c}(3900)$ in $Y(4260)\to \ppjpsi$. In this model, the
+$D_{1}(2420)\bar{D}$ coupling to the $Y(4260)$ is a key piece of
+information. Because of $D_{1}(2420)$ decays to $D\pi\pi$ or $D^{*}\pi$,
+we can also study it via $\EE\to \pi\pi D\bar{D}$ final state.
+
+In this analysis the $D\bar{D}$ (including $\ddn$ and $\ddc$) pair
+are reconstructed and selected with both $D$-mesons reconstructed.
+$D^{0}$ is reconstructed in four decay modes ($K^{-}\pi^{+}$,
+$K^{-}\pi^{+}\pi^{0}$, $K^{-}\pi^{+}\pi^{+}\pi^{-}$, and
+$K^{-}\pi^{+}\pi^{+}\pi^{-}\pi^{0}$) and $D^{+}$ in five decay
+modes ($K^{-}\pi^{+}\pi^{+}$, $K^{-}\pi^{+}\pi^{+}\pi^{0}$,
+$K^{0}_{S}\pi^{+}$, $K^{0}_{S}\pi^{+}\pi^{0}$, and
+$K^{0}_{S}\pi^{+}\pi^{-}\pi^{+}$). $\bar{D}^{0}$ and $D^{-}$ are
+reconstructed in the charge conjugate final states of $D^0$ and
+$D^+$, respectively. One $\pp$ pair is selected in addition to
+those from the $D$ decays.
+
+\section{THE EXPERIMENT AND DATA SETS}
+
+The BEPCII is a double-ring $e^{+}e^{-}$ collider running at
+center-of-mass (c.m.) energies ranging from 2.0 to 4.6~GeV. The
+BESIII spectrometer hosted at the BEPCII is designed to study
+physics in $\tau$-charm energy region~\cite{bepc2,bes3yellow}. It
+covers 93\% of 4$\pi$ in geometrical acceptance and it consists of
+four main parts. A 43 cylindrical layers cell Helium-gas
+based(40\% He, 60\% $C_{3}H_{8}$) drift chamber (MDC) which
+provides an average single-hit resolution of 135~$\mu$m and
+momentum measurements of charged particles; A plastic scintillator
+Time-of-Flight (TOF) system which  provides a time resolution of
+80~(110)~ps in the barrel~(end cap) detector; A CsI(Tl)
+Electro-Magnetic Calorimeter (EMC) which is used to measure the
+energies of photons and electrons and provides an energy
+resolution of  2.5\% (5.0\%) in the barrel (end caps); A RPC-based
+muon chamber (MUC) with a superconducting magnet providing 1.0~T
+magnetic field in the central region of BESIII.
+
+Simulated data are produced by the {\sc geant4}-based Monte Carlo
+(MC) simulation software {\sc boost}~\cite{boost}, which includes
+the geometric and material description of the BESIII detector, the
+detector response and digitization models, as well as the tracking
+of the detector running conditions and performance. In order to
+optimize the selection criteria, determine the detection
+efficiency, signal MC samples with 200,000 events for each process
+$e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$, with $\psi(3770) \to
+D\bar{D}$, $e^{+}e^{-}\to \rho^{0}X(4013)$ with
+$\rho^{0} \to \pi^{+}\pi^{-}$, $X(4013)\to D\bar{D}$ and $e^{+}e^{-}\to D_{1}(2420)\bar{D}+c.c.$ with $D_{1}(2420)\to
+D\pi^{+}\pi^{-}+c.c.$are generated
+at each c.m. energy point.
+
+In order to estimate the potential background, inclusive MC
+samples including $Y(4260)$ decays, $e^{+}e^{-}\to
+D^{(*)}D^{(*)}(\pi)$, initial state radiative (ISR) production of
+the vector charmonium states, continuum and QED processes are
+generated with {\sc kkmc} at c.m. energy $\sqrt{s}=$ 4.23, 4.26,
+4.36, 4.42, and 4.6~GeV with the equivalent luminosity as data.
+The known decay modes of the charmonia are generated with {\sc
+EvtGen}~\cite{EvtGen} with branching fractions being set to the
+world average values~\cite{PDG} and the remaining events associate
+with charmonium decays are generated with {\sc
+Lundcharm}~\cite{Lundcharm} while other hadronic events are
+generated with {\sc pythia}~\cite{PYTHIA}.
+
+In addition, exclusive MC samples with 200,000 events for the
+processes $e^{+}e^{-}\to\pi^{+}\pi^{-}D^{0}\bar{D}^{0}$, $e^{+}e^{-}\to\pi^{+}\pi^{-}D^{+}D^{-}$, $e^{+}e^{-}\to D^{*+}D^{*-}$ with $D^{*+}\to
+D^{0}\pi^{+}+c.c.$, $e^{+}e^{-}\to D^{*+}\bar{D}^{0}\pi^{-}$ with
+$D^{*+}\to D^{0}\pi^{+}+c.c.$, $e^{+}e^{-}\to
+D^{*}_{0}(2400)\bar{D}$ with $D^{*}_{0}(2400)\to D\pi+c.c.$,
+$e^{+}e^{-}\to D_{1}(2430)^{0}\bar{D}^{0}$ with $D_{1}(2430)^{0}\to
+D^{*+}\pi^{-}+c.c.$ and $e^{+}e^{-}\to D^{*}_{2}(2460)^{0}\bar{D}^{0}$ with
+$D^{*}_{2}(2460)^{0}\to D^{*+}\pi^{-}+c.c.$are
+generated at each c.m. energy to study the possible background
+contributions.
+
+\section{EVENT SELECTION AND BACKGROUND ANALYSIS}
+
+Charged tracks are reconstructed from MDC hits within a
+polar-angle ($\theta$) acceptance range of $|\cos\theta| <0.93$.
+To optimize the momentum measurement, we require that these tracks
+be reconstructed to pass within 10~cm of the interaction point in
+the beam direction and within 1~cm in the plane perpendicular to
+the beam. The TOF and dE/dx information are combined for each
+charged track to calculate the particle identification (PID)
+probability $Prob_{i}$ ($i=\pi$, $K$) of each particle-type
+hypothesis. $Prob_K>Prob_\pi$ is required for a kaon candidate and
+$Prob_\pi>Prob_K$ is required for a pion candidate. Tracks used in
+reconstructing $K^{0}_{S}$ decays are exempted from these
+requirements.
+
+Electromagnetic showers are reconstructed by clustering EMC
+crystal energies. Efficiency and energy resolution are improved by
+including energy deposits in nearby TOF counters. A photon
+candidate is defined as a shower with an energy deposit of at
+least 25~MeV in the ``barrel" region ($|\cos(\theta)|<0.8$), or of
+at least 50~MeV in the ``end-cap" region
+($0.86<|\cos(\theta)|<0.92$). Showers at angles intermediate
+between the barrel and the end-cap are not well measured and are
+rejected. An additional requirement on the EMC hit timing ($0\leq
+T\leq14$ in units 50~ns) suppresses electronic noise and energy
+deposits unrelated to the event. To eliminate showers produced by
+charged particles, the angle between the shower and nearest
+charged track is required to be greater than 20 degrees.
+
+$\pi^{0}$ candidates are reconstructed from pairs of photons with
+an invariant mass in the range
+$0.115<M_{\gamma\gamma}<0.150$~GeV/$c^{2}$. A one-constraint (1C)
+kinematic fit with the mass of the $\pi^{0}$ constraint to the PDG
+value~\cite{PDG} is also performed to improve the energy
+resolution.
+
+$K^{0}_{S}$ candidates are reconstructed from two oppositely
+charged tracks which satisfy $|\cos\theta|<0.93$ for the polar
+angle and the distance to the average beam position in beam
+direction within 20~cm. For each pair of tracks, a constrained
+vertex fit is performed and the resulting track parameters are
+used to get invariant mass $M_{\pi\pi}$ which must be in the range
+$0.487< M_{\pi\pi} < 0.511$~GeV/$c^{2}$. The $\chi^{2}$ from
+vertex fit should be little than 100.
+
+The selected  $K^{\pm}$, $\pi^{\pm}$, $K^{0}_{S}$ and $\pi^{0}$
+are used to reconstructed $D$ meson candidates for the
+$D^{0}\bar{D}^{0}$ and $D^{+}D^{-}$ double tag. If there is more
+than one candidate per possible $D\bar{D}$ pair decay mode, the
+one with the average mass $\hat{M} = [M(D) + M(\bar{D}]/2$ closest
+to the nominal mass of $D$~\cite{PDG} is chosen. In each event,
+one extra negative and one extra positive charged $\pi$ are
+required. To reduce background and improve the mass resolution, a
+four-constraint (4C) kinematic fit is performed, we constrain the
+total 4-momentum of all the charged tracks we selected and good
+photon from $\pi^{0}$ to that of the initial $e^{+}e^{-}$ system;
+if $\pi^0$ or $K^{0}_S$ exists in the final state, its mass
+constraint is also applied. If there are multiple candidates in an
+event, the one with the smallest $\chi^{2}$ is chosen. The
+$\chi^{2}$ of the kinematic fit is required to be less than 80.
+
+Figure~\ref{D0vsDbar} shows the distributions of $M(D)$ versus
+$M(\bar{D})$ we selected with this method at $\sqrt{s}=4.36$~GeV.
+The signal region in the $M(D)$ and $M(\bar{D})$ plane is defined
+as $-6 < \Delta\hat{M} <10$~MeV/$c^{2}$ and $|\Delta{M}| <
+35$~MeV/$c^2$ for $D^{0}\bar{D}^{0}$, $-5 < \Delta\hat{M} <
+10$~MeV/$c^{2}$ and $|\Delta{M}| < 25$~MeV/$c^2$ for $D^{+}D^{-}$,
+where the $\Delta\hat{M} = \hat{M} - m_D$ and $\Delta{M} =
+M(D)-M(\bar{D})$, with $m_D$ being the nominal $D$-meson
+mass~\cite{PDG}.
+
+\begin{figure*}[htbp]
+  \centering
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/D0vsD0bar.eps}
+   \put(80,80){(a)}
+   \end{overpic}
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/DpvsDm.eps}
+   \put(80,80){(b)}
+   \end{overpic}
+\caption{Scatter plot of the $D^{0}$ mass versus the $\bar{D}^{0}$
+mass (a), and $D^{+}$ mass versus the $D^{-}$ mass (b) at
+$\sqrt{s} = 4.36$~GeV. The rectangles show the signal region (red)
+and sideband regions (pink).}
+  \label{D0vsDbar}
+\end{figure*}
+
+In order to suppress the background of $e^{+}e^{-}\to
+D^{(*)}\bar{D}^{(*)}(\pi)$, we try to examine if there are $D^{*}$
+($\bar{D}^{*}$) signal in $D^0\pi^+$ ($\bar{D}^0\pi^-$)
+combination. Here the variable $M(D^{0}\pi^{+})-M(D^{0})+m_{D^0}$
+[$M(\bar{D}^{0}\pi^{-})-M(\bar{D}^{0})+m_{D^0}$] is used to get
+better mass resolution by eliminating the mass resolution effect
+coming from the reconstruction of $D^{0}$ ($\bar{D}^0$). The
+distributions of $M(D^{0}\pi^{+})-M(D^{0})+m_{D^0}$ and
+$M(\bar{D}^{0}\pi^{-})-M(\bar{D}^{0})+m_{D^0}$ are shown in
+Fig.~\ref{fitofDstar}. The criteria
+$M(D^{0}\pi^{+})-M(D^{0})+m_{D^0}>2.017$~GeV/$c^{2}$ and
+$M(\bar{D}^{0}\pi^{-})-M(\bar{D}^{0})+m_{D^0}> 2.017$~GeV/$c^{2}$
+are applied to the processes $e^{+}e^{-}\to
+\pi^{+}\pi^{-}\psi(3770)$, $\psi(3770)\to D^{0}\bar{D}^{0}$,
+$e^{+}e^{-}\to \pi^{+}\pi^{-}X(4013)$, $X(4013)\to
+D^{0}\bar{D}^{0}$ and $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}, D_{1}(2420)^{0}\to D^{0}\pi^{+}\pi^{-}+c.c. $. The criterion $M(D^{0}\pi^{+})-M(D^{0}) +
+m_{D^0}<2.017$~GeV/$c^{2}$ and
+$M(\bar{D}^{0}\pi^{-})-M(\bar{D}^{0})+m_{D^0}>2.017$~GeV/$c^{2}$
+is applied to the processes $e^{+}e^{-}\to D_{1}(2420)^{0}\bar{D}^{0}, D_{1}(2420)^{0}\to D^{*+}\pi^{-}+c.c.$
+
+\begin{figure}[htbp]
+  \centering
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/fitofDpipm_4360.eps}
+   \put(80,60){(a)}
+   \end{overpic}
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/fitofDbarpimm_4360.eps}
+   \put(80,60){(b)}
+   \end{overpic}
+\caption{The distribution of $M(D^{0}\pi^{+})$ (a) and
+$M(\bar{D}^{0}\pi^{-})$ (b) at $\sqrt{s}= 4.36$~GeV.}
+  \label{fitofDstar}
+\end{figure}
+
+ We use the inclusive MC sample to investigate possible backgrounds. There is
+no similar peaks found near 3.773~GeV/$c^{2}$ and
+4.013~GeV/$c^{2}$ in the $D\bar{D}$ invariant mass distribution,
+nor similar peak near 2.42~GeV/$c^{2}$ in the $D\pi\pi$ invariant
+mass distribution. From a study of the MC samples of highly
+excited $D$ states, we find that only process $e^{+}e^{-}\to
+D_{2}^{*}(2460)^{0}\bar{D}^{0}$, $D_{2}^{*}(2460)^{0}\to D^{*}\pi$
+can produce a peak near 2.46~GeV/$c^{2}$ in the signal region of $D_{1}(2420)^{0}$ in the invariant mass distribution of
+$D^{0}\pi\pi$. So we consider the process $e^{+}e^{-}\to
+D_{2}^{*}(2460)^{0}\bar{D}^{0}$, $D_{2}^{*}(2460)^{0}\to D^{*+}\pi^{-}$
+as a component of the background of the process $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}$, $D_{1}(2420)^{0}\to D^{*+}\pi^{-}$.
+
+
+\section{SIGNAL EXTRACTION}
+
+
+\subsection{$e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$}
+After imposing all of the above requirements, the $\ddb$ invariant mass distributions are shown in
+Fig.~\ref{FitDDbar}. A peak at around 3.773~GeV/$c^{2}$ can be seen
+in the $D\bar{D}$ invariant mass distribution, but there is no evidence
+for the possible $\psi(1^{3}D_{3})$.
+
+\begin{figure}[t]
+  \centering
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/DDbarfit_D0andDpbin_4360.eps}
+   \put(80,60){(a)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/DDbarfit_D0andDpbin_4420.eps}
+   \put(80,60){(b)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/DDbarfit_D0andDpbin_4600.eps}
+   \put(80,60){(c)}
+   \end{overpic}
+   \caption{Fits to $D\bar{D}$ invariant
+mass distributions at $\sqrt{s} = 4.36$ (a), 4.42
+(b), and 4.60~GeV (c). Dots with error bars
+are data, the (blue) solid curves are the fit results, the (red) solid curves are $\pspp$ signal, the (pink)
+dashed lines are $D_{1}(2420)\bar{D} + c.c.$ background, the blue dash line is are $\pi\pi D\bar{D}$ background and the (green)
+histograms are sideband backgrounds. }
+  \label{FitDDbar}
+\end{figure}
+
+
+\begin{figure}[t]
+  \centering
+\begin{overpic}[width=0.31\textwidth]{plotofPPT/pipDDbar_4360.eps}
+   \put(80,60){(a1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pipDDbar_4420.eps}
+   \put(80,60){(b1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pipDDbar_4600.eps}
+   \put(80,60){(c1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pimDDbar_4360.eps}
+   \put(80,60){(a2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pimDDbar_4420.eps}
+   \put(80,60){(b2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pimDDbar_4600.eps}
+   \put(80,60){(c2)}
+   \end{overpic}
+   \caption{The M($\pi^{+}\psi(3770)$) and M($\pi^{-}\psi(3770)$) distributions at $\sqrt{s} = 4.36$ (a1,a2), 4.42 (b1,b2), and 4.60~GeV (c1,c2). The dots with error bars are data, the (green) histograms are $\pspp$ signal MC, the (red) histograms are inclusive backgrounds.}
+  \label{Mpipmpsipp}
+\end{figure}
+
+To determine the $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$ signal yields,
+an unbinned maximum likelihood fit to the $M(D\bar{D})$ is performed, the
+signal is described with the MC simulated shape, and the
+background component includes $\bar{D}D_{1}(2420)+c.c.$ (described
+with MC simulated shape), $\pi\pi D\bar{D}$ (described
+with MC simulated shape) and none-$D\bar{D}$ background (described
+with the $D\bar{D}$ sideband events). In the fit, the signal yield
+and the number of $\bar{D}D_{1}(2420)+c.c.$, $\pi\pi D\bar{D}$ backgrounds are free
+parameters, and the the number of none-$D\bar{D}$ background is
+fixed to the sideband expectation. The signal yields at $\sqrt{s}$
+= 4.36, 4.42, 4.6~GeV are $71.3\pm 20.5$, $140.4\pm 23.9$, $4.7\pm
+8.4$, respectively, and the statistical significance of the signal
+are determined to be $3.8\sigma$, $6.8\sigma$ and $0\sigma$,
+respectively, by comparing the log-likelihood values with and
+without signal assumption and taking the change of the number of
+degree of freedom into account. The fit results are listed in Table~\ref{RCFDDbar}.
+
+With the same method, we also study the data samples taken at
+other c.m. energies, but no obvious signals are observed at each
+individual energy point. For these data samples, a 90\% confidence
+level (C.L.) upper limit on the number of signal events is set
+with a Bayesian method~\cite{upperlimit}. In this method, we fit
+the $M(D\bar{D})$ distribution with the number of signal events
+fixed from 0 to $n$ to get a series of likelihood values. The
+upper limit is determined by examining the number of signal events
+corresponding to 90\% of the likelihood distribution as a function
+of number of signal events. The results are listed in
+Table~\ref{RCFDDbar}.
+
+We also check the possible structure in the $\pi^{\pm}\psi(3770)$ invariant
+mass distribution as shown in the Fig.~\ref{Mpipmpsipp}, but there is no significant structure been observed.
+
+
+\subsection{$e^{+}e^{-}\to \pi^{+}\pi^{-}X_{2}(4013)$}
+
+We check the $X(4013)$ signal in high $\ddb$ mass region. After imposing
+all of the above requirements, the $\pi^{+}\pi^{-}$ and high mass region of $\ddb$ invariant
+mass distributions are shown in Fig.~\ref{FitDDbar_X}. there is no
+obvious signal at around 4.013~GeV/$c^{2}$. We try
+to fit with MC simulated signal shape, with an 3rd polynomial
+background. The signal yields are $1.81\pm 1.49$, $0.00\pm 0.88$,
+$3.11\pm 5.71$ with the statistical significance of $1.6\sigma$,
+$0\sigma$, and $1.2\sigma$, at $\sqrt{s}= 4.36$, 4.42, and
+4.60~GeV, respectively. The fits are shown in Fig.~\ref{FitDDbar_X}.
+Because the signals are not significant, 90\% C.L. upper limits on
+the numbers of signal events are set with the Bayesian
+method~\cite{upperlimit}. The results are listed in
+Table~\ref{RCFX4013}.
+
+
+
+
+\begin{figure}[htbp]
+   \centering
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pipim_X_4360.eps}
+   \put(80,60){(a1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pipim_X_4420.eps}
+   \put(80,60){(b1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/pipim_X_4600.eps}
+   \put(80,60){(c1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/fit_of_DDbarm_4360_8MeV_poly.eps}
+   \put(80,60){(a2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/fit_of_DDbarm_4420_8MeV_poly.eps}
+   \put(80,60){(b2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/fit_of_DDbarm_4600_8MeV_poly.eps}
+   \put(80,60){(c2)}
+   \end{overpic}
+   \caption{The M($\pi^{+}\pi^{-}$) distributions(first row) and fits to high mass region of $D\bar{D}$ (second row) invariant
+mass distributions at $\sqrt{s} = 4.36$ (left column), 4.42 (middle column), and 4.60~GeV (right column). For the first row, the dots with error bars are data, the (pink) histograms are $X_{2}(4013)$ signal MC, the (green) histograms are $\pspp$ signal MC, the (cyan) histograms are $\bar{D}D_{1}(2420)$ signal MC, the (red) histograms are inclusive backgrounds, the shaded histograms are sideband backgrounds.  For the second row, dots with error bars
+are data, the (blue) solid curves are the fit results. the (green) dash line are the exponential backgrounds, and the (pink) solid curve are the signal.}
+  \label{FitDDbar_X}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0unbin_4360.eps}
+   \put(80,60){(a1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0unbin_4420.eps}
+   \put(80,60){(b1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0unbin_4600.eps}
+   \put(80,60){(c1)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0starunbin_4360.eps}
+   \put(80,60){(a2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0starunbin_4420.eps}
+   \put(80,60){(b2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_D0starunbin_4600.eps}
+   \put(80,60){(c2)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_Dpunbin_4360.eps}
+   \put(80,60){(a3)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_Dpunbin_4420.eps}
+   \put(80,60){(b3)}
+   \end{overpic}
+   \begin{overpic}[width=0.31\textwidth]{plotofPPT/Dpipifit_Dpunbin_4600.eps}
+   \put(80,60){(c3)}
+   \end{overpic}
+\caption{Fits to $D^{0}\pi^{+}\pi^{-}$
+(first row), $D^{*+}\pi^{-}$(second row) and $D^{+}\pi^{+}\pi^{-}$ (third row) invariant
+mass distributions at $\sqrt{s} = 4.36$ (left column), 4.42
+(middle column), and 4.60~GeV (right column). Dots with error bars
+are data, the (blue) solid curves are the fit results, the (pink)
+solid curves are  $D_{1}(2420)$ signal, the (pink) dashed lines are
+$\pp\psi(3770)$ backgrounds,  the (green) histograms are sideband backgrounds,
+the (cyan) solid curves are $D^{*}\bar{D}\pi+c.c.$ backgrounds and
+the (cyan) dash line are $D_{2}^{*}(2460)^{0}\bar{D}+c.c.$ backgrounds,}
+  \label{FitD1}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{Results on $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$.
+Shown in the table are the number of observed signal events
+$N^{\rm obs}$, the integrated luminosity $L_{\rm int}$, the
+radiative correction factor $1+\delta^{r}$, vacuum polarization
+correction factor $1+\delta^{v}$, the summation for product of the
+branching fraction and efficiency $\sum_{i,j}\epsilon_{i,j}
+\mathcal{B}_{i}\mathcal{B}_{j}$ (the left are for $\ddn$ and the
+right are for $\ddc$ modes), the Born cross section $\sigma^{B}$.
+The upper limit are at the 90\% C.L.} \label{RCFDDbar}
+\begin{tabular}{c c c c c c c c}
+\hline \hline
+    $\sqrt{s}$ (MeV)      &$N^{\rm obs}$
+    &$L_{\rm int}({\rm pb}^{-1})$  &$1+\delta^{r}$
+    &$1+\delta^{v}$  &$\sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i}\mathcal{B}_{j}$
+    &$\sigma^{B}$ (pb) \\
+    \hline
+    4085.4&      0.0$\pm$1.0      &52.6    &0.80 &1.052  &0.0078 $\mid$ 0.0093   &0.0$\pm$54.7$\pm$5.4  &0$\sigma$ \\
+     4188.6&      0.0$\pm$0.7     &43.1    &0.85 &1.056  &0.0494 $\mid$ 0.0465   &0.0$\pm$5.5$\pm$1.1    &0$\sigma$ \\
+     4207.7&      0.0$\pm$1.2     &54.6    &0.85 &1.057  &0.0528 $\mid$ 0.0500   &0.0$\pm$6.7$\pm$3.2  &0$\sigma$ \\
+     4217.1&      0.0$\pm$0.7     &54.1    &0.85 &1.057  &0.0544 $\mid$ 0.0518   &0.0$\pm$3.7$\pm$4.6  &0$\sigma$ \\
+     4226.3&      14.3$\pm$8.6    &1047.3  &0.84 &1.056  &0.0554 $\mid$ 0.0526   &4.2$\pm$2.5$\pm$1.4    &1.8$\sigma$ \\
+     4241.7&      0.0$\pm$0.95    &55.6    &0.84 &1.056  &0.0567 $\mid$ 0.0534   &0$\pm$5.1$\pm$3.3  &0$\sigma$ \\
+     4258.0&      30.7$\pm$9.9    &825.7   &0.85 &1.054  &0.0563 $\mid$ 0.0544   &11.7$\pm$3.8$\pm$2.1   &3.54$\sigma$\\
+     4307.9&      0.0$\pm$2.5     &44.9    &0.91 &1.052  &0.0511 $\mid$ 0.0499   &0.0$\pm$16.0$\pm$1.5   &0$\sigma$ \\
+     4358.3&      71.3$\pm$20.5   &539.8   &0.94 &1.051  &0.0425 $\mid$ 0.0413   &43.1$\pm$12.4$\pm$6.6  &3.8$\sigma$ \\
+     4387.4&      15.1$\pm$6.4    &55.2    &0.95 &1.051  &0.0387 $\mid$ 0.0377   &100.7$\pm$42.7$\pm$13.7 &2.9$\sigma$\\
+     4415.6&      140.4$\pm$23.9  &1028.9  &0.95 &1.053  &0.0348 $\mid$ 0.0337   &55.7$\pm$9.5$\pm$10.4  &6.8$\sigma$\\
+     4467.1&      0.8$\pm$3.8     &109.9   &0.96 &1.055  &0.0290 $\mid$ 0.0288   &3.8$\pm$18.1$\pm$6.2  &0.1$\sigma$\\
+     4527.1&      0.0$\pm$0.7     &110.0   &0.96 &1.055  &0.0250 $\mid$ 0.0241   &0.0$\pm$3.6$\pm$1.1    &0$\sigma$\\
+     4574.5&      3.6$\pm$3.0     &47.7    &0.96$\pm$0.02 &1.055 $\mid$ 0.0229   &0.0227$\pm$0.0003   &46.6$\pm$38.8$\pm$29.8 &1.5$\sigma$\\
+     4599.5&      4.7$\pm$8.4     &566.9   &0.96$\pm$0.02 &1.055 $\mid$ 0.0221   &0.0226$\pm$0.0003   &6.3$\pm$10.9$\pm$6.8   &0.6$\sigma$\\
+    \hline \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[htbp]
+\caption{Results on $e^{+}e^{-}\to \rho^{0}X(4013)$. The symbols
+are the same as defined in Table~\ref{RCFDDbar}, the last column
+is the Born cross section of $e^{+}e^{-}\to \rho^{0}X(4013)$,
+$\sigma^{B}$, times branching fraction of $X(4013)\to D\bar{D}$.
+The upper limits are at the 90\% C.L.} \label{RCFX4013}
+\begin{tabular}{c c c c c c c c c c c}
+\hline \hline    $\sqrt{s}$ (MeV)  &$N^{\rm obs}$  &$L_{\rm int}({\rm pb}^{-1})$
+&$1+\delta^{r}$  &$1+\delta^{v}$  &$\sum_{i,j}\epsilon\mathcal{B}_{i}\mathcal{B}_{j}$
+&$\sigma^{B}\cdot\mathcal{B}_{X(4013)\to D\bar{D}}$ (pb)  \\
+    \hline
+     4358.3     &1.6$\pm$1.5($<$5.3) &539.8          &0.912  &1.051  &0.021$\mid$0.016  &$<$7.3\\
+     4415.6     &0.0$\pm$0.9($<$3.9) &1030.0         &0.923  &1.053  &0.050$\mid$0.031  &$<$1.3\\
+     4599.5     &6.6$\pm$5.9($<$16.4)&567.7          &0.948  &1.055  &0.060$\mid$0.038  &$<$7.3\\
+    \hline \hline
+\end{tabular}
+\end{table}
+
+\subsection{$e^{+}e^{-} \rightarrow D_{1}(2420)\bar{D}$}
+
+After imposing all of the above requirements, the $D\pi\pi$ invariant mass distributions are shown in
+Fig.~\ref{FitD1}. A peak at around 2.42~GeV/$c^{2}$ can
+be seen in the $D\pi\pi$ invariant mass distribution.
+
+To extract the signal yield of $e^{+}e^{-}\to
+\bar{D}^{0}D_{1}(2420)^{0}+c.c.$, the $M(D^0\pp)$ distribution is
+fitted with a signal shape from the MC simulation convoluted with
+a Gaussian function to represent shift of the mass and the mass
+resolution difference between data and MC simulation, and a
+background component includes $\pi^{+}\pi^{-}\psi(3770)$,
+$\pi^{+}\pi^{-} D^{0}\bar{D}^{0}$ and
+non-$D\bar{D}$ background. In the fit, the number of
+non-$D\bar{D}$ background is fixed to the sideband expectation,
+and those of the signal events and the other background events are
+free. The signal yields at $\sqrt{s} = 4.36$, 4.42, and 4.6~GeV
+are $114.1\pm 32.7$, $215.5\pm 37.1$, and $48.4\pm 16.1$ with the
+statistical significance of $3.4\sigma$, $6.2\sigma$, and
+$3.5\sigma$, respectively. The fit results are list in the Table~\ref{RCFD0D1}.  With the same
+method, we also study the data samples taken at other c.m.
+energies, no significant signals are observed at any individual
+energy point and upper limit on the number of signal events are
+set with the Bayesian method~\cite{upperlimit}. The results are
+listed in Table~\ref{RCFD0D1}.
+
+
+\begin{table}[!htbp]
+\caption{The results on $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}+c.c.$ times branching fraction of $D_{1}(2420)^{0}\rightarrow D^{0}\pi^{+}\pi^{-}+c.c.$. The symbols are the same as
+defined in Table~\ref{RCFDDbar}, the last column is the Born cross
+section of $e^{+}e^{-}\to D_{1}(2420)^{0}\bar{D}^{0}+c.c.$,
+$\sigma^{B}$, times branching fraction of $D_{1}(2420)^{0}\to
+D^{0}\pi^{+}\pi^{-}$. The upper limits are at the 90\% C.L. }
+\label{RCFD0D1}
+\begin{tabular}{c c c c c c c c}
+\hline \hline
+    $\sqrt{s}$ (GeV)      &$N^{\rm obs}$  &$L_{\rm int}({\rm pb}^{-1})$  &$1+\delta^{r}$  &$1+\delta^{v}$  &$\sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i}\mathcal{B}_{j}$     &$\sigma^{B}\times\mathcal{B}$(pb) &S \\
+    \hline
+     4307.9&      2.31$\pm$1.7    &44.90  &0.87$\pm$0.03 &1.052  &0.0527$\pm$0.0005   &12.4$\pm$9.1$\pm$1.4   &1.5$\sigma$ \\
+     4358.3&      85.5$\pm$27.5   &539.8  &0.94$\pm$0.02 &1.051  &0.0440$\pm$0.0005   &42.4$\pm$16.2$\pm$4.2  &3.4$\sigma$ \\
+     4387.4&      11.1$\pm$7.9    &55.2   &0.95$\pm$0.02 &1.051  &0.0399$\pm$0.0004   &58.9$\pm$45.6$\pm$5.8  &1.5$\sigma$ \\
+     4415.6&      193.7$\pm$37.5  &1030.0 &0.94$\pm$0.02 &1.053  &0.0310$\pm$0.0004   &72.2$\pm$13.8$\pm$6.5  &6.2$\sigma$ \\
+     4467.1&      8.25$\pm$5.7     &110.3  &0.92$\pm$0.02 &1.055  &0.0296$\pm$0.0004  &30.3$\pm$19.8$\pm$2.7  &1.7$\sigma$ \\
+     4527.1&      5.4$\pm$2.9     &110.5  &0.94$\pm$0.01 &1.055  &0.0264$\pm$0.0004   &21.7$\pm$11.3$\pm$2.8  &1.2$\sigma$ \\
+     4574.5&      2.3$\pm$3.6     &47.7   &0.94$\pm$0.01 &1.055  &0.0240$\pm$0.0003   &23.6$\pm$34.1$\pm$3.1  &0.8$\sigma$ \\
+     4599.5&      43.5$\pm$15.1   &567.7  &0.94$\pm$0.01 &1.055  &0.0232$\pm$0.0003   &38.6$\ pm$14.3$\pm$5.1  &3.5$\sigma$ \\
+    \hline \hline
+\end{tabular}
+\end{table}
+
+
+
+
+We do similar fit to M($D^{*+}\pi^{-}$)  to $M(D^0\pp)$ with a
+ signal shape from the MC simulation convoluted with
+a Gaussian function to represent shift of the mass and the mass
+resolution difference between data and MC simulation, and a
+background component includes
+$D^{*}\bar{D}\pi+c.c.$, $D_{2}^{*}(2460)^{0}\bar{D}+c.c.$ and
+non-$D\bar{D}$ background. The signal yields at $\sqrt{s} = 4.36$, 4.42, and 4.6~GeV
+are $19.3\pm 12.8$, $37.1\pm 16.5$, and $11.9\pm 8.7$ with the
+statistical significance of $1.6\sigma$, $2.4\sigma$, and
+$1.5\sigma$, respectively. The fit results are list in the Table~\ref{RCFD0starD1}.  With the
+same method, set the upper limit on the number of signal events as
+the signal is insignificant. The results are also listed in
+Table~\ref{RCFD0starD1}.
+
+
+\begin{table}[htbp]
+\caption{Same as Table~\ref{RCFD0starD1} for the process $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}+c.c.$ times branching fraction of $D_{1}(2420)^{0}\rightarrow D^{*+}\pi^{-}+c.c.$.}
+\label{RCFD0starD1}
+\begin{tabular}{c c c c c c c c}
+\hline \hline
+    $\sqrt{s}$(GeV)      &$N^{obs}$ &$L_{\rm int}({\rm pb}^{-1})$  &$1+\delta^{r}$  &$1+\delta^{v}$  &$\sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i}\mathcal{B}_{j}$     &$\sigma^{B}\times\mathcal{B}$(pb) &S\\
+    \hline
+     4307.9&      0.0$\pm$1.2   &44.90   &0.9138  &1.052  &0.0641$\pm$0.0005   &0$\pm$6.6$\pm$3.3      & 0$\sigma$ \\
+     4358.3&      78.4$\pm$24.8 &539.8   &0.9418  &1.051  &0.0551$\pm$0.0005   &39.1$\pm$12.4$\pm$3.3  & 3.2$\sigma$ \\
+     4387.4&      0.0$\pm$3.8   &55.2    &0.9473  &1.051  &0.0504$\pm$0.0005   &0$\pm$20.5$\pm$3.3     & 0$\sigma$ \\
+     4415.6&      98.4$\pm$28.0 &1030.0  &0.9516  &1.053  &0.0399$\pm$0.0004   &35.9$\pm$10.2$\pm$2.1  & 3.7$\sigma$ \\
+     4467.1&      2.0$\pm$7.3   &110.3   &0.9554  &1.055  &0.0391$\pm$0.0004   &7.1$\pm$25.7$\pm$0.4   & 1.1$\sigma$\\
+     4527.1&      2.3$\pm$1.9   &110.5   &0.9597  &1.055  &0.0350$\pm$0.0004   &8.8$\pm$7.3$\pm$0.8    & 0.8$\sigma$ \\
+     4574.5&      4.2$\pm$2.9   &47.7    &0.9631  &1.055  &0.0318$\pm$0.0004   &41.4$\pm$28.6$\pm$3.6  & 1.1$\sigma$ \\
+     4599.5&      21.3$\pm$11.6 &567.7   &0.9651  &1.055  &0.0312$\pm$0.0004   &18.0$\pm$9.8$\pm$1.6   & 2.1$\sigma$ \\
+    \hline \hline
+\end{tabular}
+\end{table}
+
+
+We do similar fit to $M(D^+\pp)$ as to $M(D^0\pp)$ with a signal
+component and a background component includes
+$\pi^{+}\pi^{-}\psi(3770)$, $\pi^{+}\pi^{-} D^{+}D^{-}$  and non-$D\bar{D}$ background. The
+signal yields at $\sqrt{s} = 4.36$, 4.42, and 4.6~GeV are $78.4\pm
+24.8$, $98.4\pm 28.0$, and $21.3\pm 1.2$ with the statistical
+significances of $3.2\sigma$, $3.7\sigma$, and $2.1\sigma$,
+respectively.  The fit results are shown in the
+Fig.~\ref{FitDDbar} and listed in Table~\ref{RCFDpD1}.  With the
+same method, set the upper limit on the number of signal events as
+the signal is insignificant. The results are also listed in
+Table~\ref{RCFDpD1}.
+
+\begin{table}[htbp]
+\caption{Same as Table~\ref{RCFDpD1} for the process
+$e^{+}e^{-}\to D_{1}(2420)^{+}D^{-}+c.c.$ times branching fraction of $D_{1}(2420)^{+}\rightarrow D^{+}\pi^{+}\pi^{-}+c.c.$.}
+ \label{RCFDpD1}
+\begin{tabular}{c c c c c c c c}
+\hline \hline
+ $\sqrt{s}$ (MeV)      &$N^{\rm obs}$ &$L_{\rm int}({\rm pb}^{-1})$
+ &$1+\delta^{r}$  &$1+\delta^{v}$  &$\sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i}\mathcal{B}_{j}$
+ &$\sigma^{B}\cdot\mathcal{B}_{D_{1}(2420)^{+}\to D^{+}\pi^{+}\pi^{-}}$ (pb) \\
+    \hline
+     4307.9&      0.8$\pm$1.4($<$5.2)  &44.90   &0.9138  &1.052  &0.0631   &4.4$\pm$7.3$\pm$0.4($<$27.7)    \\
+     4358.3&      94$\pm$19($<$110)    &539.8   &0.9418  &1.051  &0.0540   &46.7$\pm$9.4$\pm$4.5($<$54.6)           \\
+     4387.4&      6.8$\pm$4.1($<$13.6) &55.2    &0.9473  &1.051  &0.0488   &36.0$\pm$21.6$\pm$3.5($<72.3$) \\
+     4415.6&      129$\pm$26($<$151.2) &1030.0  &0.9516  &1.053  &0.0397   &47.3$\pm$9.4$\pm$8.1($<$55.4)           \\
+     4467.1&      7.0$\pm$6.1($<15.5$) &110.3   &0.9554  &1.055  &0.0382   &24.4$\pm$21.2$\pm$4.2($<$53.8)   \\
+     4527.1&      2.7$\pm$2.2($<6.8$)  &110.5   &0.9597  &1.055  &0.0345   &10.3$\pm$8.2$\pm$3.2($<$25.8)   \\
+     4574.5&      4.6$\pm$2.3($<$9.1)  &47.7    &0.9631  &1.055  &0.0319   &42.6$\pm$21.2$\pm$13.3($<$85.1)   \\
+     4599.5&      22.8$\pm$7.5($<$33.3)&567.7   &0.9651  &1.055  &0.0306   &18.3$\pm$6.0$\pm$5.7($<$26.7)     \\
+    \hline \hline
+\end{tabular}
+\end{table}
+
+\section{CROSS SECTION RESULTS}
+
+The Born cross section of $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$
+is calculated with
+\begin{equation}
+  \sigma^{B} = \frac{N^{\rm obs}}{\mathcal{L}_{\rm int}
+ (1+\delta^{r}) (1+\delta^{v}) (\mathcal{B}_{\psi(3770)\to D^{0}\bar{D}^{0}}
+ \sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i}\mathcal{B}_{j}+
+ \mathcal{B}_{\psi(3770)\to D^{+}D^{-}} \sum_{k,l}\epsilon_{k,l}\mathcal{B}_{k}\mathcal{B}_{l})},
+ \label{xspspp}
+\end{equation}
+where $N^{\rm obs}$ is the number of observed events;
+$\mathcal{L}_{\rm int}$ is the integrated luminosity;
+$\epsilon_{i,j}$ is the selection efficiency for $e^{+}e^{-} \to
+\pi^{+}\pi^{-}\psi(3770)$, $\psi(3770)\to D^{0}\bar{D}^{0}$,
+$D^{0}\to i$, $\bar{D}^{0}\to j)$; $\mathcal{B}_{\pspp\to \ddn}$
+and $\mathcal{B}_{\pspp\to \ddc}$ are the branching
+fractions~\cite{PDG}; $\mathcal{B}_{i}$ ($\mathcal{B}_{j}$) is the
+branching fraction for $D^{0}\to i$ ($\bar{D}^{0}\to j$) (the same
+applies to $\epsilon_{k,l}$ and $\mathcal{B}_{k}$
+($\mathcal{B}_{l}$) for charged mode) from PDG~\cite{PDG};
+$(1+\delta^{v})$ is the vacuum polarization factor~\cite{vpcalculation},
+and $(1+\delta^{r})$ is the radiative correction factor which is defined as below:
+
+\begin{equation}
+    (1+\delta^{r})= \frac{\sigma^{obs}}{\sigma^{B}} = \frac{\int \,\sigma^{B}(s(1-x))F(x,s)d x}{\sigma^{B}(s)}.
+\end{equation}
+
+ \noindent Here, $F(x,s)$ is the radiator function, which is from QED calculation~\cite{QEDcalculation} with an accuracy of 0.1\%; and $\sigma^{B}(s)$ is energy dependent Born cross section of $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$.  The Born cross
+sections are listed in Table~\ref{RCFDDbar} and shown in Fig.~\ref{Cpipipsi3770}.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{overpic}[width=0.45\textwidth]{plotofPPT/crosssection_psi3770total.eps}
+   \put(80,60){(a)}
+   \end{overpic}
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/crosssection_D0D1_total.eps}
+   \put(80,60){(b)}
+   \end{overpic}
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/crosssection_D0starD1_total.eps}
+   \put(80,60){(c)}
+   \end{overpic}
+   \begin{overpic}[width=0.45\textwidth]{plotofPPT/crosssection_DpD1_total.eps}
+   \put(80,60){(d)}
+   \end{overpic}
+\caption{Born cross sections of $e^{+}e^{-}\to
+\pi^{+}\pi^{-}\psi(3770)$ (a), $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}+c.c.\to \pp\ddn$ (b), and
+$e^{+}e^{-}\to D_{1}(2420)^{+}D^{-}+c.c.\to \pp\ddc$ (c). The
+inner error bars are statistical errors, and the outer error bars
+are the combined statistical and systematic errors.}
+\label{Cpipipsi3770}
+\end{figure}
+
+For $e^{+}e^{-}\to \rho^{0}X(4013)$, we measure the upper limit of
+the product of its Born cross section and the branching fraction
+to $\ddb$, assuming $\mathcal{B}_{X(4013)\to D^{0}\bar{D}^{0}} =
+\mathcal{B}_{X(4013)\to D^{+}D^{-}} = 0.5\mathcal{B}_{X(4013)\to
+D\bar{D}}$. One may use Eq.~(\ref{xspspp}) with the efficiency
+replaced by the simulation of the $X(4013)$ intermediate state,
+and the number of signal events by the upper limit of the number
+of signal events. The results are listed in Table~\ref{RCFX4013}.
+
+For the process $e^{+}e^{-}\to \bar{D}D_{1}$, $D_{1}(2420)\to
+X(D\pi^{+}\pi^{-} or D^{*}\pi)+c.c.$, the product Born cross section times
+branching fraction of $D_{1}(2420)\to X$ can be
+calculated using
+\begin{equation}
+  \sigma^{B}\times \mathcal{B}_{D_{1}(2420)\to X} =
+  \frac{N^{\rm obs}}{\mathcal{L}_{\rm int} (1+\delta^{r})
+  (1+\delta^{v}) \sum_{i,j}\epsilon_{i,j} \mathcal{B}_{i} \mathcal{B}_{j}},
+\end{equation}
+where $\epsilon_{i,j}$ is selection efficiency for $e^{+}e^{-} \to
+D_{1}(2420)\bar{D}$ ($D_{1}(2420)\to D\pi^{+}\pi^{-}$, $D\to i$,
+$\bar{D}\to j$) and the other variables as defined in
+Eq.~(\ref{xspspp}). The numbers used and the cross section results
+are shown in Tables~\ref{RCFD0D1},  ~\ref{RCFD0starD1}and~\ref{RCFDpD1} for neutral
+and charged $D_1(2420)$, respectively. The cross sections as a
+function of c.m. energy are also shown in Fig.~\ref{Cpipipsi3770}.
+
+\section{Systematic uncertainty estimation}
+
+The systematic uncertainties in the cross section measurements
+mainly stem from the integrated luminosity, signal shape,
+background shape, fitting range, tracking efficiency, photon
+detection, kinematic fit, intermediate state decay branching
+fractions, and ISR correction factor. The following items describe
+how the uncertainties are estimated and the results are listed in
+Tables~\ref{sys_err_psipp}, \ref{sys_err_X4013}, \ref{sys_err_D0}, \ref{sys_err_D0star},
+and~\ref{sys_err_Dp}.
+
+\begin{table}[htbp]
+\scriptsize \caption{Summary of systematic uncertainties (in \%)
+in $\sigma(e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770))$ measurement.}
+\label{sys_err_psipp}
+\begin{tabular}{c c c c c c c c c c c c c c c c}
+\hline \hline
+     $\sqrt{s}$ (MeV) &4085.4 &4188.6 &4207.7  &4217.1  &4226.3  &4241.7 &4258.0  &4307.9   &4358.3  &4387.4   &4415.6  &4467.1   &4527.1  &4574.5   &4599.5\\
+    \hline
+    Luminosity                  & 1.0 & 1.0  & 1.0  & 1.0  & 1.0  & 1.0  &1.0   &1.0    & 1.0  & 1.0   & 1.0  & 1.0   & 1.0   & 1.0   & 1.0  \\
+    Efficiency related          &4.4  &4.6   &4.3   &4.3   &3.9   &4.0   &4.3   &3.9    &3.8   &3.6    &3.4   &3.3    &3.2    &3.2    &3.0   \\
+    Radiative correction        &1.34 &1.54  &2.13  &1.54  &0.56  &4.37  &1.11  &6.34   &0.60  &1.81   &2.11  &1.75   &0.66   &2.45   &0.18  \\
+    Sinal shape                 &3.4  &3.4   &3.4   &3.4   &3.4   &3.4   &3.4   &3.4    &3.4   &3.4    &3.8   &3.8    &3.8    &3.8    &3.8   \\
+    Background shape            &9.9  &9.9   &9.9   &9.9   &9.9   &9.9   &9.9   &9.9    &9.9   &9.9    &7.6   &7.6    &7.6    &7.6    &7.6   \\
+    Fit Range                   &2.0  &2.0   &2.0   &2.0   &2.0   &2.0   &2.0   &2.0    &2.0   &2.0    &2.4   &2.4    &2.4    &2.4    &2.4   \\
+    Signal region of double tag &5.3  &5.3   &5.3   &5.3   &5.3   &5.3   &5.3   &5.3    &5.3   &5.3    &2.0   &2.0    &2.0    &2.0    &2.0   \\
+    \hline
+    Total                       &11.7  &12.9  &12.9  &12.8  &12.6  &13.3  &12.7  &14.0  &12.5  &12.6  &9.9  &9.8  &9.7  &10.0  &9.6      \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Summary of systematic uncertainties (in \%) in
+$e^{+}e^{-}\to \rho^{0}X(4013)\to \pp\ddb$ measurement.}
+\label{sys_err_X4013}
+\begin{tabular}{c c c c}
+\hline \hline
+     $\sqrt{s}$ (MeV)      &4358.3   &4415.6   &4599.5\\
+     \hline
+    Luminosity                       & 1.0   & 1.0    & 1.0 \\
+    Efficiency related               &2.6	 &2.7	  &2.7	\\
+    Radiative correction             &5.6    &14.5    &5.9  \\
+    Sinal shape                      &9.9    &0       &11.5 \\
+    Background shape                 &3.2    &0       &4.6  \\
+    Fit Range                        &4.5    &0       &4.4  \\
+    Signal region of double tag      &3.3    &0       &12.1  \\
+    \hline
+    Total                            &13.4  &14.7  &19.0  \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Summary of systematic uncertainties (in \%) for
+$e^{+}e^{-}\to D_{1}(2420)^{0}\bar{D}^{0}, D_{1}(2420)^{0}\to D^{0}\pi^{+}\pi^{-} +c.c.$.}
+\label{sys_err_D0}
+\begin{tabular}{c  c  c  c c c c c c}
+\hline \hline
+   $\sqrt{s}$ (MeV)    &4307.9   &4358.3  &4387.4   &4415.6  &4467.1   &4527.1  &4574.5   &4599.5\\
+    \hline
+    Luminosity                  & 1.0   & 1.0  & 1.0   & 1.0  & 1.0   & 1.0   & 1.0   & 1.0 \\
+    Efficiency related          &4.9	&4.9   &5.0	   &5.0	  &5.0    &4.9	  &5.0	  &4.9 \\
+    Radiative correction        &6.34   &0.60  &1.81   &2.11  &1.75   &0.66   &2.45   &0.18   \\
+    Sinal shape                 &7.21   &7.21  &7.21   &5.52  &5.52   &8.16   &8.16   &8.16  \\
+    Background shape            &3.21   &3.21  &3.21   &1.23  &1.23   &7.35   &7.35   &7.35  \\
+    Fit Range                   &0.94   &0.94  &0.94   &1.03  &1.03   &0.92   &0.92   &0.92   \\
+    Signal region of double tag &2.64   &2.64  &2.64   &4.20  &4.20   &4.76   &4.76   &4.76  \\
+%    Others                      & - & - & - & - & - & - & - & - \\
+    \hline
+    Total                       &11.6  &9.8  &9.9  &9.0  &8.9  &13.0  &13.3  &13.0     \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Summary of systematic uncertainties (in \%) for
+$e^{+}e^{-}\to D_{1}(2420)^{0}\bar{D}^{0}, D_{1}(2420)^{0}\to D^{*+}\pi^{-} +c.c.$.}
+\label{sys_err_D0star}
+\begin{tabular}{c  c  c  c c c c c c}
+\hline \hline
+   $\sqrt{s}$ (MeV)    &4307.9   &4358.3  &4387.4   &4415.6  &4467.1   &4527.1  &4574.5   &4599.5\\
+    \hline
+   Luminosity                  & 1.0   & 1.0  & 1.0   & 1.0  & 1.0   & 1.0   & 1.0   & 1.0 \\
+    Efficiency related          &4.9	&4.9   &5.0	   &5.0	  &5.0    &4.9	  &5.0	  &4.9 \\
+    Radiative correction        &6.34   &0.60  &1.81   &2.11  &1.75   &0.66   &2.45   &0.18   \\
+    Sinal shape                 &5.34   &5.34  &5.34   &2.77  &2.77   &4.85   &4.85   &4.85  \\
+    Background shape            &0.21   &0.21  &0.21   &1.79  &1.79   &7.35   &0.12   &0.12  \\
+    Fit Range                   &2.70   &2.70  &2.70   &3.89  &3.89   &0.80   &0.80   &0.80   \\
+    Signal region of double tag &4.93   &4.93  &4.93   &2.64  &2.64   &9.78   &9.78   &9.78  \\
+%    Others                      & - & - & - & - & - & - & - & - \\
+    \hline
+    Total                       &11.2  &9.2  &9.5  &7.9  &7.9  &14.1  &12.3  &12.0    \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Summary of systematic uncertainties (in $\%$) for
+$e^{+}e^{-}\to D_{1}(2420)^{+}D^{-}+c.c.\to \pp\ddc$.}
+\label{sys_err_Dp}
+\begin{tabular}{c  c c c c c c c c}
+\hline \hline
+    Sources / $\sqrt{s}$ (MeV)   &4307.9   &4358.3  &4387.4   &4415.6  &4467.1   &4527.1  &4574.5   &4599.5 \\
+    \hline
+    Luminosity                   & 1.0   & 1.0   & 1.0   & 1.0   & 1.0   & 1.0  & 1.0   & 1.0 \\
+    Efficiency related           &3.3    &3.3    &3.3    &3.3    &3.3    &3.3   &3.3    &3.3\\
+    Radiative correction         &2.41   &0.24   &1.01   &0.98   &0.59   &3.44  &1.41   &1.51\\
+    Sinal shape                  &7.40   &7.40   &7.40   &4.17   &4.17   &4.13  &4.13   &4.13 \\
+    Background shape             &1.61   &1.61   &1.61   &0.81   &0.81   &3.83  &3.83   &3.83  \\
+    Fit Range                    &1.74   &1.74   &1.74   &0.98   &0.98   &1.73  &1.73   &1.73  \\
+    Signal region of double tag  &1.10   &1.10   &1.10   &1.33   &1.33   &5.23  &5.23   &5.23\\
+%    Others                       & - & - & - & - & - & - & - & -\\
+    \hline
+    Total                        &8.9   &8.6  &8.6  &5.8  &5.7  &9.3  &8.7  &8.7       \\
+    \hline
+    \hline
+\end{tabular}
+\end{table}
+
+(a) The uncertainty from the integrated luminosity measurement
+using Bhabha ($e^{+}e^{-}\to e^{+}e^{-}$) scattering events is
+estimated to be 1.0\% in Ref.~\cite{luminosity}.
+
+(b) The systematic uncertainty caused by the signal shape is
+estimated by varying the width of the signal by one standard
+deviation of its world average value~\cite{PDG} in generating
+signal MC sample. The difference in the cross section compared
+with the nominal value is taken as the systematic uncertainty of
+signal shape.
+
+(c) The systematic uncertainty caused by the background shape from
+MC simulated $\pi\pi\psi(3770)$, $D_{1}(2420)\bar{D}$ and $D_{1}(2460)\bar{D}$ is estimated by
+changing the widthes of the $\psi(3770)$, $D_{1}(2420)$ and $D_{1}(2460)$ by one
+standard deviations of the world average values~\cite{PDG} in
+generating MC samples, the difference from the nominal fit values
+are taken as the systematic uncertainties. These two uncertainties
+are large because $e^{+}e^{-}\to \pp\psi(3770)$ and $e^{+}e^{-}\to
+D_{1}(2420)\bar{D}$ have overlap in $M(D\bar{D})$ and
+$M(D\pi^{+}\pi^{-})$, and the widthes of $\psi(3770)$ and
+$D_{1}(2420)$ are not small, so the separation of the two
+components is not easy in fitting, or in other words, there is
+strong anti-correlation between these two components.
+
+The systematic uncertainty from sideband selection is estimated by
+changing the sideband windows by 10~MeV/$c^2$, the difference from
+using the nominal mass windows are taken as the systematic
+uncertainty. For $e^{+}e^{-}\to \rho^{0}X(4013)$, we change the
+background shape from an exponential to a polynomial, and take the
+difference as the systematic uncertainty of background shape.
+
+(d) The systematic uncertainty from the fitting range is obtained
+by varying the limits of the fit range by 20~MeV/$c^{2}$, the
+difference is taken as the systematic uncertainty.
+
+(e) In order to estimate the systematic uncertainty due to the
+selection of signal windows in double $D$-tag, we repeat the whole
+analysis by changing the signal regions from
+$|\Delta{M}|<35$~MeV/$c^2$, $-6<\Delta\hat{M}<10$~MeV$/c^{2}$ to
+$|\Delta{M}|<39$~MeV$/c^2$, $-8<\Delta\hat{M}<12$~MeV/$c^{2}$ for
+$D^{0}\bar{D}^{0}$ mode; and from $|\Delta{M}|<25$~MeV/$c^2$,
+$-5<\Delta\hat{M}<10$~MeV/$c^{2}$ to $|\Delta{M}|<29$~MeV/$c^2$,
+$-7<\Delta\hat{M}<12$~MeV$/c^{2}$ for $D^{+}D^{-}$ mode. The
+difference in the cross sections is taken as the systematic
+uncertainty.
+
+(f) The efficiency related systematic uncertainty includes the
+uncertainties from MC statistics, particle identification,
+tracking, $\pi^{0}$ and $K_{S}^{0}$ reconstruction, kinematic fit,
+as well as the branching fractions of $D$ decays. Tracking
+uncertainty in each charged track is 1\%~\cite{Tracking};
+uncertainty in particle identification efficiency is 1\% per
+track~\cite{Tracking}; uncertainty in the photon reconstruction is
+1\% per photon~\cite{Photon}, and uncertainty in the $\pi^{0}$
+reconstruction is 3\% per $\pi^{0}$~\cite{Photon}.
+
+Uncertainty in the kinematic fit is estimated using the
+track-parameter-correction method~\cite{kinematic fit}. The
+difference between MC efficiencies before and after correction is
+taken as the systematic uncertainty for kinematic fit (the
+efficiencies from the track-parameter-corrected MC samples are
+taken as the nominal ones).
+
+The systematic error of $\mathcal{B}(D^{*+}\to \pi^{+}D^{0})$ is
+taken as 0.74\%, those of $\mathcal{B}(D^{0}\to K^{-}\pi^{+})$,
+$\mathcal{B}(D^{0}\to K^{-}\pi^{+}\pi^{0})$, $\mathcal{B}(D^{0}\to
+K^{-}\pi^{+}\pi^{+}\pi^{-})$, and $\mathcal{B}(D^{0}\to
+K^{-}\pi^{+}\pi^{+}\pi^{-}\pi^{0})$ are taken as 1.29\%, 3.60\%,
+2.60\%, and 9.52\%, respectively, and those of
+$\mathcal{B}(D^{+}\to K^{-}\pi^{+}\pi^{+})$, $\mathcal{B}(D^{+}\to
+K^{-}\pi^{+}\pi^{+}\pi^{0})$, $\mathcal{B}(D^{+}\to
+K^{0}_{S}\pi^{+})$, $\mathcal{B}(D^{+}\to
+K^{0}_{S}\pi^{+}\pi^{0})$, $\mathcal{B}(D^{+}\to
+K^{0}_{S}\pi^{+}\pi^{-}\pi^{+})$ are taken as 2.08\%, 3.01\%,
+4.76\%, 3.86\%, and 3.53\%, respectively~\cite{PDG}.
+
+The total efficiency related systematic uncertainty is the
+quadratic sum of all the related individual uncertainties.
+
+(g) ISR is simulated with {\sc kkmc}. The line shapes of the
+processes understudy will affect the radiative correction factors
+and the efficiencies. For $e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$
+and $e^{+}e^{-}\to \bar{D}D_{1}(2420)$, we first assume the observed
+signal events originate from the $Y(4260)$ resonance to obtain the
+efficiencies and ISR correction factors, then the measured line
+shapes are used as input to calculate efficiencies and ISR
+correction factors again. This procedure is repeated until the
+difference between the two subsequent iterations is small enough
+compared with the statistical uncertainties, and the difference is
+taken as the systematic uncertainty.
+
+Since we have no knowledge on the production of $e^{+}e^{-}\to
+\rho^{0}X(4013)$, we assume $\rho^{0}X(4013)$ follows the
+$Y(4260)$ or the $\psi(4415)$ line shape, the difference between
+these two assumptions is taken as the systematic uncertainty.
+
+Tables~\ref{sys_err_psipp}, \ref{sys_err_X4013}, \ref{sys_err_D0}, \ref{sys_err_D0star},
+and~\ref{sys_err_Dp} summarize all the systematic uncertainties.
+The overall systematic uncertainties are obtained by summing all
+the sources of systematic uncertainties in quadrature by assuming
+they are independent.
+
+\section{Summary and discussions}
+
+In this analysis, we analyzed $\EE\to \pp\ddb$ final states with
+data samples collected at $\sqrt{s}$ = 4.09, 4.19, 4.21, 4.22,
+4.23, 4.245, 4.26, 4.31, 4.36, 4.39, 4.42, 4,47, 4.53, 4.575, and
+4.60~GeV.
+
+We searched for $e^{+}e^{-}\to \pp\psi(3770)$ and the possible
+$\pp\psi(1^{3}D_{3})$. We observed for the first time the process
+$e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$, but did not find
+evidence for the $\psi(1^{3}D_{3})$. The Born cross sections of
+$e^{+}e^{-}\to \pi^{+}\pi^{-}\psi(3770)$ are measured as shown in
+Fig.~\ref{Cpipipsi3770}. These can be compared with the production
+cross section of $\EE\to \pp\psi(1^3D_2)$~\cite{X3823}. If we take
+ $\BR(\psi(1^3D_2)\to \gamma\chi_{c1})\approx
+ \frac{250~{\rm keV}}{390~{\rm keV}}\approx 0.64$~\cite{BranchX3823},
+the Born cross sections of $\EE\to \pp\psi(1^3D_1)$ is an order of
+magnitude larger than those of $\EE\to \pp\psi(1^3D_2)$ at the
+same c.m. energies~\cite{X3823}. The $e^{+}e^{-}\to \pp\psi(3770)$
+line shape shows similar structure as in $\EE\to
+\pp\psi(1^3D_2)$~\cite{X3823}, whether the events are from the
+$Y(4360)$ or the $\psi(4415)$ or other resonances is still not
+clear based on current statistics.
+
+For the data points with enough statistics of $\EE\to \pp\pspp$,
+we checked the Dalitz plot of the three-body system. We did not
+observe significant structure in $\pi\pspp$ system, i.e., no the
+signal of $Z_c$ is observed.
+
+We also searched for the heavy-quark-spin-symmetry partner of the
+$X(3872$), the $X(4013)$, via $e^{+}e^{-}\to
+\pi^{+}\pi^{-}X(4013)$, with $X(4013)\to D\bar{D}$, no significant
+signal of $X(4013)$ was observed in any data sample. The upper
+limits of $\sigma(\EE\to \rho^{0}X(4013))\cdot
+\mathcal{B}(X(4013)\to \ddb)$ are estimated as 5.1, 1.1, and
+5.1~pb at $\sqrt{s}=4.36$, 4.42, and 4.6~GeV, respectively, at the
+90\% C.L.
+
+We also observed for the first time $e^{+}e^{-}\to
+D_{1}(2420)^{0}\bar{D}^{0}+c.c.$ and $e^{+}e^{-}\to
+D_{1}(2420)^{+}D^{-}+c.c.$ and measured the Born cross sections at
+$\sqrt{s} = 4.31$, 4.36, 4.39, 4.42, 4,47, 4.53, 4.575, and
+4.60~GeV, as shown in Fig.~\ref{Cpipipsi3770}. According to Zhao
+{\it et al.}'s model to interpret the $Y(4260)$~\cite{Y4260asDD1},
+a nontrivial structure will arise from the presence of the
+$S$-wave $D_{1}(2420)\bar{D}$ threshold. In our results, there is no
+fast rise of the cross sections above the $D_{1}(2420)\bar{D}$
+threshold, instead, a broad structure at around 4.4~GeV is
+observed.
+
+\begin{thebibliography}{**}
+
+\bibitem{BabarY4260} B. Aubert {\em et al.} (BABAR Collaboration),
+Phys. Rev. Lett. {\bf 95}, 142001 (2005).
+
+\bibitem{BabarY4360} B. Aubert {\em et al.} (BABAR Collaboration),
+
+\bibitem{BELLEY4260} C. Z. Yuan {\em et al.} (Belle Collaboration),
+Phys. Rev. Lett. {\bf 99}, 182004 (2007). Z.~Q.~Liu {\it et al.}
+[Belle Collaboration], Phys.\ Rev.\ Lett.\  {\bf 110}, 252002
+(2013).
+
+\bibitem{BELLEY4360} X. L. Wang  {\em et al.} (Belle Collaboration),
+Phys. Rev. Lett. {\bf 99}, 142002 (2007).  X.~L.~Wang {\it et al.}
+[Belle Collaboration], Phys.\ Rev.\ D {\bf 91}, no. 11, 112007
+(2015).
+
+\bibitem{zc3900} M.Ablikim {\em et al.}, (BESIII Collaboration),
+Phys. Rev. Lett. {\bf 110}, 252001 (2013).
+
+\bibitem{X3823} M. Ablikim {\em et al.} (BESIII Collaboration),
+Phys. Rev. Lett. {\bf 115}, 011803 (2015).
+
+\bibitem{Highercharmonia} T. Barnes, S. Godfrey, and E. S. Swanson,
+Phys. Rev. D {\bf 72}, 054026 (2005).
+
+\bibitem{X3872} S. K. Choi {\em et al.} (Belle Collaboration),
+Phys. Rev. Lett. {\bf 91}, 262001 (2003).
+
+\bibitem{CDFX3872} D. Acosta {\em et al.} (CDF Collaboration),
+Phys. Rev. Lett. {\bf 93}, 072001 (2004).
+
+\bibitem{D0X3872} V. M. Abazov {\em et al.} (D0 Collaboration),
+Phys. Rev. Lett. {\bf 93}, 162002 (2004).
+
+\bibitem{BABARX3872} B. Aubert {\em et al.} (BABAR Collaboration),
+Phys. Rev. D {\bf 71}, 071103 (2005).
+
+\bibitem{PRD056004} J. Nieves and M. Pavon Valderrama,
+Phys. Rev. D {\bf 86}, 056004 (2012).
+
+\bibitem{PRD076006} C. Hidalgo-Duque, J. Nieves and
+M. Pavon Valderrama, Phys. Rev. D {\bf 87}, 076006 (2013).
+
+\bibitem{DecaywidthX4013} Feng-Kun Guo {\em et al.},
+arXiv:1504.00861.
+
+\bibitem{Y4260asDD1}Q. Wang, C. Hanhart and Q. Zhao,
+Phys. Rev. Lett. {\bf 111}, 132003 (2013).
+
+\bibitem{bepc2} M. Ablikim {\em et al.} [BESIII Collaboration],
+Nucl.\ Instrum.\ Meth.\ A {\bf 614}, 345 (2010).
+
+\bibitem{bes3yellow} D. M. Asner {\em et al.},
+\Journal\IJMP{24}{499}{2009}.
+
+\bibitem{boost} Z. Y. Deng {\em et al.},
+HEP \& NP {\bf 30}, 371 (2006).
+
+\bibitem{EvtGen} http://www.slac.stanford.edu/\~lange/EvtGen;
+R. G. Ping {\em et al.}, Chinese Physics C {\bf 32}, 599 417 (2008).
+
+\bibitem{PDG} K. A. Olive {\em et al.} (Particle Data Group),
+Chin. Phys. C {\bf 38}, 090001 (2014).
+
+\bibitem{Lundcharm} R. G. Ping {\em et al.},
+Chin. Phys. C {\bf 32}, 599 (2008).
+
+\bibitem{PYTHIA} http://home.thep.lu.se/torbjorn/Pythia.html
+
+\bibitem{KKMC} S. Jadach, B. F. L. Ward, and Z. Was,
+Comput. Phys. Commun. 130, 260 (2000);
+Phys. Rev. D {\bf 63}, 113009 (2001).
+
+\bibitem{upperlimit} J. Conrad {\em et al.},
+Phys. Rev. D {\bf 67}, 012002 (2003).
+
+\bibitem{vpcalculation} http://www-com.physik.hu-berlin.de/\~fjeger.
+
+\bibitem{QEDcalculation} E. A. Kuraev and V. S. Fadin, Yad. Fiz. 41, 733-742 (1985).
+
+\bibitem{luminosity} M. Ablikim al.(BESIII Collaboration),
+Chin. Phys. C {\bf 39}, 093001 (2015).
+
+\bibitem{Tracking}M. Ablikim {\em et al.} (BESIII Collaboration),
+Phys. Rev. D {\bf 83}, 112005 (2011).
+
+\bibitem{Photon}M. Ablikim {\em et al.} (BESIII Collaboration),
+Phys. Rev. D {\bf 81}, 052005 (2010).
+
+\bibitem{kinematic fit}M. Ablikim {\em et al.} (BESIII Collaboration),
+Phys. Rev. D {\bf 87}, 012002 (2013).
+
+\bibitem{BranchX3823} C. F. Qiao , F. Yuan, and K. T. Chao,
+Phys. Rev. D {\bf 55}, 4001 (1997).
+
+\end{thebibliography}
+\end{document}
